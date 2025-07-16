@@ -35,17 +35,23 @@ public class Work1
             System.out.println("Marks is:" + marksList[i]);
         }
         
-        
+        int highest = marksList[0];
+        int lowest = marksList[0];
+        for (int i=0; i< marksList.length; i++){
+            if(marksList[i] > highest){
+                highest = marksList[i];
+            }
+            
+            if(marksList[i] < lowest){
+                lowest = marksList[i];
+            }
+        }
     
-   
-    
-    
-    
-    
-   
-
-    
-    
+        System.out.println("Highest Marks is" + highest);
+        System.out.println("lowest Marks is" + lowest);
     }
+    
+    
+    
     
 }
