@@ -9,8 +9,7 @@ import java.util.Scanner;
 public class Work2
 {
     public static void main(String[] args){
-    
-    Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("Enter a number a marks a user want to input:");
         int number = input.nextInt();
         int [] marksList = new int[number]; 
@@ -34,6 +33,16 @@ public class Work2
         for(int i = 0; i<number; i++){
             System.out.println("Marks is:" + marksList[i]);
         }
+        
+        
+        double sum = 0.0;
+        for(int i = 0; i< number; i++){
+            sum = sum + marksList[i];
+        }
+        double mean = sum / number;
+        System.out.println("The mean of all marks is" + mean);
+      
+        
     
     }
     
