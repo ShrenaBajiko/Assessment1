@@ -29,6 +29,11 @@ public class Work1
                 }
             }
         } 
+        //display the marks in array
+        System.out.println("\n Enter list of marks:");
+        for(int i = 0; i<number; i++){
+            System.out.println("Marks is:" + marksList[i]);
+        }
         
         
     
