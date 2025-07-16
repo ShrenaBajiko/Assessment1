@@ -36,11 +36,28 @@ public class Work2
         
         
         double sum = 0.0;
+        double sqrt = 0.0;
+        double diff = 0.0;
+        double var = 0.0;
+        
         for(int i = 0; i< number; i++){
             sum = sum + marksList[i];
         }
         double mean = sum / number;
         System.out.println("The mean of all marks is" + mean);
+        
+        
+         for(int i = 0; i< number; i++){
+            diff = marksList[i] - mean;
+            sqrt += diff * diff;
+        }
+        System.out.println("The square differnce is" + sqrt);
+        
+        
+        
+        
+        
+        
       
         
     
