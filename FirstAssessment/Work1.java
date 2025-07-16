@@ -5,29 +5,42 @@
  * @author (your name)
  * @version (a version number or a date)
  */
+import java.util.Scanner;
 public class Work1
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    public static void main(String[] args){
+    
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number a marks a user want to input:");
+        int number = input.nextInt();
+        int [] marksList = new int[number]; 
+        for(int i =0; i<number; i++){
+            int mark;
+            while(true){
+                System.out.println("Enter a marks that lies in between 0 and 30");
+                mark = input.nextInt();
+                
+                if(mark >= 0 && mark <= 30){
+                    marksList[i] = mark;
+                    break;
+                }
+                else{
+                    System.out.println("Invalid marks. please try again");
+                }
+            }
+        } 
+        
+        
+    
+   
+    
+    
+    
+    
+   
 
-    /**
-     * Constructor for objects of class Work1
-     */
-    public Work1()
-    {
-        // initialise instance variables
-        x = 0;
+    
+    
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    
 }
