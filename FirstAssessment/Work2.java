@@ -53,14 +53,9 @@ public class Work2
         }
         System.out.println("The square differnce is" + sqrt);
         
+        var = sqrt / number; //variance of all marks
+        System.out.println("The variance is" + var);
         
-        
-        
-        
-        
-      
-        
-    
     }
     
 }
