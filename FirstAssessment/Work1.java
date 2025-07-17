@@ -11,7 +11,7 @@ public class Work1
     public static void main(String[] args){
     
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the number of marks a user want to input:");
+        System.out.println("Enter the number of marks you want to input:");
         int number = input.nextInt();
         
     //edge case for 0 or necgative number
@@ -26,7 +26,7 @@ public class Work1
         for(int i =0; i<number; i++){
             int mark;
             while(true){
-                System.out.println("Enter a marks that lies in between 0 and 30");
+                System.out.println("Enter a marks between 0 and 30");
                 mark = input.nextInt();
                 
                 if(mark >= 0 && mark <= 30){
@@ -47,7 +47,7 @@ public class Work1
         //find highest and lowest marks
         int highest = marksList[0];
         int lowest = marksList[0];
-        for (int i=0; i< marksList.length; i++){
+        for (int i=1; i< marksList.length; i++){
             if(marksList[i] > highest){
                 highest = marksList[i];
             }
