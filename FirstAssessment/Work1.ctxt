@@ -2,4 +2,10 @@
 comment0.target=Work1
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment2.params=marksList
+comment2.target=int\ findHighest(int[])
+comment3.params=marksList
+comment3.target=int\ findLowest(int[])
+comment4.params=highest\ lowest
+comment4.target=void\ displayResults(int,\ int)
+numComments=5
