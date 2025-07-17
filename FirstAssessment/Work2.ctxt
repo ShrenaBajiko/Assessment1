@@ -2,4 +2,8 @@
 comment0.target=Work2
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment2.params=marksList\ number
+comment2.target=double\ totalMean(double[],\ int)
+comment3.params=marksList\ number\ mean
+comment3.target=double\ totalVariance(double[],\ int,\ double)
+numComments=4
