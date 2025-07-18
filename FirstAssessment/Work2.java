@@ -66,7 +66,7 @@ public class Work2
             double diff = marksList[i] - mean;
             sqrt += diff * diff;
         }
-        System.out.println("The square differnce is" + sqrt);
+        //System.out.println("The square differnce is" + sqrt);
         
         double var = sqrt / number; //variance of all marks
         
