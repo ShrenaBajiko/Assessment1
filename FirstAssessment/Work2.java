@@ -11,7 +11,18 @@ public class Work2
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number of marks you want to input:");
+
+        
+        
+        
         int number = input.nextInt();
+        //edge case for 0 or negative number
+        if (number <= 0) {
+            System.out.println("Invalid number of marks. Must be greater than 0.");
+            input.close();
+            return;
+        }
+        
         double [] marksList = new double[number]; 
         for(int i =0; i<number; i++){
             int mark;
@@ -29,7 +40,7 @@ public class Work2
             }
         } 
         //display the marks in array
-        System.out.println("\n Enter list of marks:");
+        System.out.println("\n List of marks entered:");
         for(int i = 0; i<number; i++){
             System.out.println("Marks is:" + marksList[i]);
         }
@@ -41,13 +52,7 @@ public class Work2
         System.out.println("Mean = " + mean);
         System.out.println("Variance = " + variance);
 
-                
-        
-        
-        
-        
-        
-    }
+}
     
     public static double totalMean(double[] marksList, int number) {
          double sum = 0;

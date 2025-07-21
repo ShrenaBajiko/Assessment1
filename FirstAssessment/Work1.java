@@ -50,7 +50,6 @@ public class Work1
             System.out.println("Marks is:" + marksList[i]);
         }
         
-        
         int highest = findHighest(marksList);
         int lowest = findLowest(marksList);
         displayResults(highest, lowest);  
